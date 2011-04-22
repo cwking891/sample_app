@@ -5,4 +5,9 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def about
+		@title = "mousy"
+  end
+
 end
+ 
