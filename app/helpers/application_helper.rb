@@ -9,4 +9,8 @@ module ApplicationHelper
     end
   end
 
+<<<<<<< HEAD
 end
+=======
+	end
+>>>>>>> css-added
