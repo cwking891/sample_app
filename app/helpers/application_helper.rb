@@ -8,9 +8,4 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
-
-<<<<<<< HEAD
 end
-=======
-	end
->>>>>>> css-added
