@@ -1,15 +1,13 @@
 class PagesController < ApplicationController
   def home
-		@title = "Home"
+    @mouse = "cat"
+
   end
 
   def contact
-		@title = "Contact"
   end
 
-  def about
-		@title = "About"
+  def help
   end
 
 end
- 

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fly: 
+  sound: MyString
+
+two:
+  fly: 
+  sound: MyString
