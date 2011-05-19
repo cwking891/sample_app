@@ -2,15 +2,18 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 gem 'sqlite3'
-group :development do
-  gem 'rspec-rails', '2.5.0'
-  gem 'annotate-models'
-end
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 group :test do
   gem 'rspec'
   gem 'webrat'
   gem 'spork'
+  gem 'factory_girl_rails', '1.0'
+end
+
+group :development do
+  gem 'rspec-rails', '2.5.0'
+  gem 'annotate-models'
 end
 
 # Use unicorn as the web server
