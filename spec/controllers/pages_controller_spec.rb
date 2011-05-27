@@ -1,18 +1,19 @@
 require 'spec_helper'
 
 describe PagesController do
-	render_views
+  render_views
 	
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
       response.should be_success
     end
-		it "should not stink" do
-			get 'home'
-			response.should have_selector("title",
-				:content => "App")
-		end
+
+      it "should not explode" do
+	  get 'home'
+	  response.should have_selector("title",
+	  :content => "App")
+	end
   end
 
   describe "GET 'contact'" do
@@ -25,6 +26,13 @@ describe PagesController do
   describe "GET 'about'" do
     it "should be successful" do
       get 'about'
+      response.should be_success
+    end
+  end
+
+  describe "GET 'help'" do
+    it "should be successful" do
+      get 'help'
       response.should be_success
     end
   end

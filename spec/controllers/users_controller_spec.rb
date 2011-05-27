@@ -65,8 +65,6 @@ describe UsersController do
 
     it "should have the right title" do
       get :new
-	 # Note: would be more consistent to get the title of the
-	 # actual 'new' page, since we are returning to it...
       response.should have_selector("title", :content => "Sign Up")
     end
 

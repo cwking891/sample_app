@@ -6,21 +6,15 @@ class UsersController < ApplicationController
   end
 
   def create
-
     @user = User.new(params[:user])
     if @user.save
+      sign_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
-	 # Note that we are repeating ourselves here.
-	 # if we simple sent the new action then we get the title
-	 # from above, and it would render the new template.
-	 # why can't we do that? because we cannot generate a
-	 # new request.. we can only prepare response to create request
-      @title = "Sign up"
+      @title = "Sign Up"
       render 'new'
     end
-
   end
 
   def show
