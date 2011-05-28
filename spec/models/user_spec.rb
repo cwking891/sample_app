@@ -116,7 +116,7 @@ describe User do
   .each do |email|
     it "should not allow invalid email format" do
 	 user = User.create(@rec.merge(:email => email) )
-	 puts "Email " + user.email + " " + user.valid?.to_s
+	 # puts "Email " + user.email + " " + user.valid?.to_s
 	 user.should_not be_valid
     end
   end
@@ -130,7 +130,7 @@ describe User do
 	# allowed it
 	user.should eql(nil)
     rescue ActiveRecord::RecordNotUnique => e #user is nil
-	puts "Caught Exception " + e.class.to_s + " " +e.to_s
+	# puts "Caught Exception " + e.class.to_s + " " +e.to_s
 	a.should be_valid
     end
   end

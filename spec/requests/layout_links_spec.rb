@@ -6,7 +6,7 @@ describe "Layout links" do
     it "should have a signin link" do
       visit root_path
       response.should have_selector("a", :href => signin_path,
-                                         :content => "Sign In")
+                                         :content => "Sign in")
     end
   end
 
@@ -23,7 +23,7 @@ describe "Layout links" do
     it "should have a signout link" do
       visit root_path
       response.should have_selector("a", :href => signout_path,
-                                         :content => "Sign Out")
+                                         :content => "Sign out")
     end
 
     it "should have a profile link" do
